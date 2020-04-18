@@ -1,0 +1,68 @@
+@import '~antd/es/style/themes/default.less';
+
+  .card {
+    margin-bottom: 16px;
+  }
+
+  .extraImg {
+    width: 155px;
+    margin-top: -40px;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+  
+  
+  .pageHeaderContent {
+    position: relative;
+  }
+  
+  .contentLink {
+    margin-top: 16px;
+    a {
+      margin-right: 32px;
+      img {
+        width: 24px;
+      }
+    }
+    img {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  }
+  
+  @media screen and (max-width: @screen-lg) {
+    .contentLink {
+      a {
+        margin-right: 16px;
+      }
+    }
+  }
+  @media screen and (max-width: @screen-md) {
+    .extraImg {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: @screen-sm) {
+    .pageHeaderContent {
+      padding-bottom: 30px;
+    }
+    .contentLink {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 1000px;
+      a {
+        margin-right: 16px;
+      }
+      img {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .ant-page-header-content{
+    overflow: visible;
+  }
